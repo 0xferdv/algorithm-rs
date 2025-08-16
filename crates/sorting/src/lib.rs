@@ -1,18 +1,46 @@
-mod bead_sort;
-mod binary_insertion_sort;
-mod bingo_sort;
-mod bitonic_sort;
-mod bubble_sort;
-mod bucket_sort;
+pub mod bead_sort;
+pub use bead_sort::*;
+
+pub mod binary_insertion_sort;
+pub use binary_insertion_sort::*;
+
+pub mod bingo_sort;
+pub use bingo_sort::*;
+
+pub mod bitonic_sort;
+pub use bitonic_sort::*;
+
+pub mod bubble_sort;
+pub use bubble_sort::*;
+
+pub mod bucket_sort;
+pub use bucket_sort::*;
+
 pub mod insertion_sort;
-mod cocktail_shaker_sort;
-mod comb_sort;
-mod counting_sort;
-mod cycle_sort;
-mod dutch_national_flag_sort;
-mod exchange_sort;
-mod gnome_sort;
-mod heap_sort;
+pub use insertion_sort::*;
+
+pub mod cocktail_shaker_sort;
+pub use cocktail_shaker_sort::*;
+
+pub mod comb_sort;
+pub use comb_sort::*;
+
+pub mod counting_sort;
+pub use counting_sort::*;
+
+pub mod cycle_sort;
+pub use cycle_sort::*;
+
+pub mod dutch_national_flag_sort;
+pub use dutch_national_flag_sort::*;
+
+pub mod exchange_sort;
+pub use exchange_sort::*;
+
+pub mod gnome_sort;
+pub use gnome_sort::*;
+pub mod heap_sort;
+pub use heap_sort::*;
 
 #[cfg(test)]
 /// 检查两个切片是否包含相同的元素（不考虑顺序）
