@@ -62,6 +62,9 @@ pub use patience_sort::*;
 pub mod pigeonhole_sort;
 pub use pigeonhole_sort::*;
 
+pub mod quick_sort;
+pub use quick_sort::*;
+
 
 
 #[cfg(test)]
