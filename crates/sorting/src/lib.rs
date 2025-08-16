@@ -52,6 +52,9 @@ pub use merge_sort::*;
 pub mod odd_even_sort;
 pub use odd_even_sort::*;
 
+pub mod pancake_sort;
+pub use pancake_sort::*;
+
 
 #[cfg(test)]
 /// 检查两个切片是否包含相同的元素（不考虑顺序）
