@@ -59,6 +59,10 @@ pub use pancake_sort::*;
 pub mod patience_sort;
 pub use patience_sort::*;
 
+pub mod pigeonhole_sort;
+pub use pigeonhole_sort::*;
+
+
 
 #[cfg(test)]
 /// 检查两个切片是否包含相同的元素（不考虑顺序）
