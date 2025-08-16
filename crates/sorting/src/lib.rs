@@ -44,7 +44,10 @@ pub mod heap_sort;
 pub use heap_sort::*;
 
 pub mod intro_sort;
-pub use heap_sort::*;
+pub use intro_sort::*;
+
+pub mod merge_sort;
+pub use merge_sort::*;
 
 #[cfg(test)]
 /// 检查两个切片是否包含相同的元素（不考虑顺序）
