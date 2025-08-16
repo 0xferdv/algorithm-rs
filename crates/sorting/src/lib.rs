@@ -1,6 +1,5 @@
 mod bead_sort;
-
-
+mod binary_insertion_sort;
 
 // 测试函数
 #[cfg(test)]
