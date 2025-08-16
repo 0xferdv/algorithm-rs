@@ -39,7 +39,11 @@ pub use exchange_sort::*;
 
 pub mod gnome_sort;
 pub use gnome_sort::*;
+
 pub mod heap_sort;
+pub use heap_sort::*;
+
+pub mod intro_sort;
 pub use heap_sort::*;
 
 #[cfg(test)]
