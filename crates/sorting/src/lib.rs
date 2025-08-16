@@ -2,6 +2,10 @@ mod bead_sort;
 mod binary_insertion_sort;
 mod bingo_sort;
 mod bitonic_sort;
+mod bubble_sort;
+mod bucket_sort;
+pub mod insertion_sort;
+mod cocktail_shaker_sort;
 
 #[cfg(test)]
 /// 检查两个切片是否包含相同的元素（不考虑顺序）
