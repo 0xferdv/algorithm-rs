@@ -11,6 +11,7 @@ mod counting_sort;
 mod cycle_sort;
 mod dutch_national_flag_sort;
 mod exchange_sort;
+mod gnome_sort;
 
 #[cfg(test)]
 /// 检查两个切片是否包含相同的元素（不考虑顺序）
