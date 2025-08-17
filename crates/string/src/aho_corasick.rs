@@ -149,7 +149,7 @@ impl AhoCorasick {
     /// 在文本中搜索所有匹配的模式串
     ///
     /// # 参数
-    /// * [s](file://E:\0xferdv\001-rust\algorithm-rs\Rust-master\src\backtracking\mod.rs) - 要搜索的文本字符串
+    /// * `s` - 要搜索的文本字符串
     ///
     /// # 返回值
     /// 返回所有匹配到的模式串切片组成的向量
