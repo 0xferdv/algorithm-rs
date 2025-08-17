@@ -9,3 +9,15 @@ pub use autocomplete_using_trie::*;
 
 mod boyer_moore_search;
 pub use boyer_moore_search::*;
+
+mod burrows_wheeler_transform;
+pub use burrows_wheeler_transform::*;
+
+
+
+
+
+
+
+
+
