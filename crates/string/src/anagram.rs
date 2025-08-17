@@ -6,6 +6,19 @@ pub enum AnagramError{
     NonAlphabeticCharacter,
 }
 
+/// 检查两个字符串是否是字母异位词（anagram）。
+///
+/// 该函数会忽略空格，并将所有字母转换为小写进行比较。
+/// 如果字符串中包含非字母字符，则返回错误。
+///
+/// # 参数
+/// * `s` - 第一个待比较的字符串
+/// * `t` - 第二个待比较的字符串
+///
+/// # 返回值
+/// * `Ok(true)`: 如果两个字符串是异位词
+/// * `Ok(false)`: 如果两个字符串不是异位词
+/// * `Err(AnagramError::NonAlphabeticCharacter)`: 如果字符串中包含非字母字符
 #[allow(unused)]
 pub fn check_anagram(s: &str, t: &str) -> Result<bool, AnagramError> {
     let s_cleaned = clean_string(s)?;
@@ -14,6 +27,14 @@ pub fn check_anagram(s: &str, t: &str) -> Result<bool, AnagramError> {
 }
 
 
+/// 清理字符串：移除空格，转换为小写，并检查是否只包含字母。
+///
+/// # 参数
+/// * `s` - 需要清理的字符串
+///
+/// # 返回值
+/// * `Ok(String)`: 清理后的字符串（只有小写字母）
+/// * `Err(AnagramError::NonAlphabeticCharacter)`: 如果字符串中包含非字母字符
 fn clean_string(s: &str) -> Result<String, AnagramError> {
     s.chars()
         .filter(|c| !c.is_whitespace())
@@ -27,8 +48,16 @@ fn clean_string(s: &str) -> Result<String, AnagramError> {
 }
 
 
+/// 统计字符串中每个字符出现的次数。
+///
+/// # 参数
+/// * `s` - 要统计的字符串
+///
+/// # 返回值
+/// 返回一个HashMap，键为字符，值为该字符出现的次数
 fn char_count(s: &str) -> HashMap<char, usize> {
     let mut res = HashMap::new();
+    // 遍历每个字符并更新计数
     s.chars().for_each(|c| {
         *res.entry(c).or_insert(0) += 1;
     });
@@ -78,4 +107,3 @@ mod tests {
         invalid_anagram_with_symbols: ("check@anagram", "check@nagaram", Err(AnagramError::NonAlphabeticCharacter)),
     }
 }
-
