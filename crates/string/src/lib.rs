@@ -20,10 +20,12 @@ mod hamming_distance;
 pub use hamming_distance::*;
 
 mod isogram;
-mod isomorphism;
-
 pub use isogram::*;
 
+mod isomorphism;
+pub use isomorphism::*;
 
+mod jaro_winkler_distance;
+pub use jaro_winkler_distance::*;
 
 
