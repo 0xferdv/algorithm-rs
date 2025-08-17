@@ -77,6 +77,8 @@ pub use selection_sort::*;
 pub mod shell_sort;
 pub use shell_sort::*;
 
+pub mod sleep_sort;
+pub use sleep_sort::*;
 
 
 #[cfg(test)]
