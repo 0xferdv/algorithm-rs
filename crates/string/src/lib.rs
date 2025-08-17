@@ -40,4 +40,6 @@ pub use lipogram::*;
 mod marcher;
 pub use marcher::*;
 
+mod palindrome;
+pub use palindrome::*;
 
