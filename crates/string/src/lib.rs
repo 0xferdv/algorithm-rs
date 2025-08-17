@@ -33,3 +33,10 @@ pub use knuth_morris_pratt::*;
 
 mod levenshtein_distance;
 pub use levenshtein_distance::*;
+
+mod lipogram;
+pub use lipogram::*;
+
+
+
+
