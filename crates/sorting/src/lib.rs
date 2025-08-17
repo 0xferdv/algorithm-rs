@@ -87,12 +87,13 @@ pub mod stooge_sort;
 pub use stooge_sort::*;
 
 pub mod tim_sort;
-
 pub use tim_sort::*;
 
 pub mod tree_sort;
 pub use tree_sort::*;
 
+pub mod wave_sort;
+pub use wave_sort::*;
 
 
 
