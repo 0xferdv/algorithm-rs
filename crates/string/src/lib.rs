@@ -20,6 +20,8 @@ mod hamming_distance;
 pub use hamming_distance::*;
 
 mod isogram;
+mod isomorphism;
+
 pub use isogram::*;
 
 
