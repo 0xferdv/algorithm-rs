@@ -2,6 +2,10 @@ pub mod aho_corasick;
 pub use aho_corasick::*;
 
 pub mod anagram;
-mod autocomplete_using_trie;
-
 pub use anagram::*;
+
+mod autocomplete_using_trie;
+pub use autocomplete_using_trie::*;
+
+mod boyer_moore_search;
+pub use boyer_moore_search::*;
