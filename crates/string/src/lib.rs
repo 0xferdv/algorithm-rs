@@ -43,3 +43,7 @@ pub use marcher::*;
 mod palindrome;
 pub use palindrome::*;
 
+mod pangram;
+pub use pangram::*;
+
+
