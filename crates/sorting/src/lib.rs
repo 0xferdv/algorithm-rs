@@ -74,6 +74,10 @@ pub use radix_sort::*;
 pub mod selection_sort;
 pub use selection_sort::*;
 
+pub mod shell_sort;
+pub use shell_sort::*;
+
+
 
 #[cfg(test)]
 /// 检查两个切片是否包含相同的元素（不考虑顺序）
