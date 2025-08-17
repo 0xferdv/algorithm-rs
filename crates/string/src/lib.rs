@@ -16,7 +16,8 @@ pub use burrows_wheeler_transform::*;
 mod duval_algorithm;
 pub use duval_algorithm::*;
 
-
+mod hamming_distance;
+pub use hamming_distance::*;
 
 
 
