@@ -95,6 +95,8 @@ pub use tree_sort::*;
 pub mod wave_sort;
 pub use wave_sort::*;
 
+pub mod wiggle_sort;
+pub use wiggle_sort::*;
 
 
 #[cfg(test)]
