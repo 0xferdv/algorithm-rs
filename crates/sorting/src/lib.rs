@@ -84,8 +84,10 @@ pub mod sort_util;
 pub use sort_util::*;
 
 pub mod stooge_sort;
-pub use selection_sort::*;
+pub use stooge_sort::*;
 
+pub mod tim_sort;
+pub use tim_sort::*;
 
 
 #[cfg(test)]
