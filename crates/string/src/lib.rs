@@ -31,4 +31,5 @@ pub use jaro_winkler_distance::*;
 mod knuth_morris_pratt;
 pub use knuth_morris_pratt::*;
 
-
+mod levenshtein_distance;
+pub use levenshtein_distance::*;
