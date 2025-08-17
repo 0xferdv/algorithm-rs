@@ -19,7 +19,8 @@ pub use duval_algorithm::*;
 mod hamming_distance;
 pub use hamming_distance::*;
 
-
+mod isogram;
+pub use isogram::*;
 
 
 
