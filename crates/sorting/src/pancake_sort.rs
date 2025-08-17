@@ -9,7 +9,7 @@
 ///
 /// # 返回值
 ///
-/// 返回排序后元素的 Vec<T> 容器
+/// 返回排序后元素的 `Vec<T>` 容器
 #[allow(unused)]
 pub fn pancake_sort<T: PartialEq + PartialOrd + Clone + Ord>(arr: &mut [T]) -> Vec<T> {
     let len = arr.len();

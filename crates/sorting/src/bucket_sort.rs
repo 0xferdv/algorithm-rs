@@ -11,7 +11,7 @@ use crate::insertion_sort::insertion_sort;
 ///
 /// # 返回值
 ///
-/// 返回一个新的 Vec<usize>，其中包含按升序排列的元素。
+/// 返回一个新的 `Vec<usize>`，其中包含按升序排列的元素。
 #[allow(unused)]
 pub fn bucket_sort(arr: &[usize]) -> Vec<usize> {
     // 处理空数组的情况

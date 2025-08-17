@@ -83,6 +83,10 @@ pub use sleep_sort::*;
 pub mod sort_util;
 pub use sort_util::*;
 
+pub mod stooge_sort;
+pub use selection_sort::*;
+
+
 
 #[cfg(test)]
 /// 检查两个切片是否包含相同的元素（不考虑顺序）
