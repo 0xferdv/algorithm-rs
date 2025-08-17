@@ -65,6 +65,8 @@ pub use pigeonhole_sort::*;
 pub mod quick_sort;
 pub use quick_sort::*;
 
+pub mod quick_sort_3_ways;
+pub use quick_sort_3_ways::*;
 
 
 #[cfg(test)]

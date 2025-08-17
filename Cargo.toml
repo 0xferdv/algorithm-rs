@@ -8,4 +8,9 @@ members = [
 ]
 
 [workspace.dependencies]
-sorting = { path = "crates/sorting" }
+
+# crates
+sorting = { path = "./crates/sorting" }
+
+# dependencies
+rand = { version = "0.9"}
