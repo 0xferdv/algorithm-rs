@@ -13,6 +13,8 @@ pub use boyer_moore_search::*;
 mod burrows_wheeler_transform;
 pub use burrows_wheeler_transform::*;
 
+mod duval_algorithm;
+pub use duval_algorithm::*;
 
 
 
