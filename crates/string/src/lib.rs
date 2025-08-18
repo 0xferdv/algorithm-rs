@@ -52,7 +52,8 @@ pub use rabin_karp::*;
 mod reverse;
 pub use reverse::*;
 
-
+mod run_length_encoding;
+pub use run_length_encoding::*;
 
 
 
