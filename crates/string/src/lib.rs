@@ -48,3 +48,15 @@ pub use pangram::*;
 
 mod rabin_karp;
 pub use rabin_karp::*;
+
+mod reverse;
+pub use reverse::*;
+
+
+
+
+
+
+
+
+
