@@ -46,4 +46,5 @@ pub use palindrome::*;
 mod pangram;
 pub use pangram::*;
 
-
+mod rabin_karp;
+pub use rabin_karp::*;
