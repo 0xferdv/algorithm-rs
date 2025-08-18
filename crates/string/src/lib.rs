@@ -55,6 +55,8 @@ pub use reverse::*;
 mod run_length_encoding;
 pub use run_length_encoding::*;
 
+mod shortest_palindrome;
+pub use shortest_palindrome::*;
 
 
 
