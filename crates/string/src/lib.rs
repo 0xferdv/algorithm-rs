@@ -58,7 +58,8 @@ pub use run_length_encoding::*;
 mod shortest_palindrome;
 pub use shortest_palindrome::*;
 
-
+mod suffix_array;
+pub use suffix_array::*;
 
 
 
