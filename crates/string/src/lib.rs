@@ -61,6 +61,7 @@ pub use shortest_palindrome::*;
 mod suffix_array;
 pub use suffix_array::*;
 
-
+mod suffix_array_member_myers;
+pub use suffix_array_member_myers::*;
 
 
