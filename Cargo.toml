@@ -1,0 +1,16 @@
+[workspace]
+
+resolver = "3"
+
+members = [
+    "crates/sorting",
+    "crates/string",
+]
+
+[workspace.dependencies]
+
+# crates
+sorting = { path = "./crates/sorting" }
+
+# dependencies
+rand = { version = "0.9"}
