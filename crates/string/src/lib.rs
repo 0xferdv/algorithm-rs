@@ -64,4 +64,5 @@ pub use suffix_array::*;
 mod suffix_array_member_myers;
 pub use suffix_array_member_myers::*;
 
-
+mod suffix_tree;
+pub use suffix_tree::*;
