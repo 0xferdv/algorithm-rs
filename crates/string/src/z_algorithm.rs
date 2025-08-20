@@ -1,3 +1,16 @@
+/// 计算从指定起始位置开始的 Z 值。
+///
+/// 该函数用于计算 input_string 中从 start_index 开始，
+/// 与 pattern 匹配的最长前缀长度（即 Z 值）。
+///
+/// # 参数
+/// - `input_string`: 要搜索的主字符串切片。
+/// - `pattern`: 模式字符串切片。
+/// - `start_index`: 在 input_string 中开始匹配的位置。
+/// - `z_value`: 初始的 Z 值，通常为 0。
+///
+/// # 返回值
+/// 返回从 start_index 开始匹配到的最长前缀长度。
 #[allow(unused)]
 fn calculate_z_value<T: Eq>(
     input_string: &[T],
@@ -16,6 +29,18 @@ fn calculate_z_value<T: Eq>(
     z_value
 }
 
+/// 根据之前的匹配结果初始化当前索引的 Z 值。
+///
+/// 利用 Z 算法中的已有信息，避免重复计算以提高效率。
+///
+/// # 参数
+/// - `z_array`: 已经计算的部分 Z 数组。
+/// - `i`: 当前要处理的索引。
+/// - `match_end`: 当前已知匹配区间的右边界。
+/// - `last_match`: 上一次匹配开始的索引。
+///
+/// # 返回值
+/// 返回可以复用的初始 Z 值。
 #[allow(unused)]
 fn initialize_z_array_from_previous_match(
     z_array: &[usize],
@@ -26,6 +51,16 @@ fn initialize_z_array_from_previous_match(
     std::cmp::min(z_array[i - last_match], match_end - i + 1)
 }
 
+/// 查找所有完全匹配的位置。
+///
+/// 遍历 Z 数组，找出所有等于模式串长度的 Z 值对应的索引。
+///
+/// # 参数
+/// - `z_array`: 完整的 Z 数组。
+/// - `pattern_size`: 模式串的长度。
+///
+/// # 返回值
+/// 返回所有完全匹配的起始索引组成的向量。
 #[allow(unused)]
 fn find_full_matches(z_array: &[usize], pattern_size: usize) -> Vec<usize> {
     z_array
@@ -35,7 +70,19 @@ fn find_full_matches(z_array: &[usize], pattern_size: usize) -> Vec<usize> {
         .collect()
 }
 
-
+/// 使用 Z 算法在输入字符串中查找模式串的所有匹配位置。
+///
+/// 支持返回所有匹配（包括部分匹配）或仅返回完全匹配。
+///
+/// # 参数
+/// - `input_string`: 要搜索的主字符串切片。
+/// - `pattern`: 模式字符串切片。
+/// - `start_index`: 开始匹配的索引。
+/// - `only_full_matches`: 是否只返回完全匹配的位置。
+///
+/// # 返回值
+/// 如果 only_full_matches 为 true，则返回完全匹配的起始索引；
+/// 否则返回完整的 Z 数组。
 fn match_with_z_array<T: Eq>(
     input_string: &[T],
     pattern: &[T],
@@ -47,16 +94,25 @@ fn match_with_z_array<T: Eq>(
     let mut last_match: usize = 0;
     let mut match_end: usize = 0;
     let mut z_array = vec![0; size];
+
+    // 遍历字符串并构建 Z 数组
     (start_index..size).for_each(|idx| {
+        // 如果当前索引在已有匹配范围内，尝试复用之前的匹配信息
         if idx <= match_end {
             z_array[idx] = initialize_z_array_from_previous_match(&z_array, idx, match_end, last_match);
         }
+
+        // 计算当前位置的实际 Z 值
         z_array[idx] = calculate_z_value(input_string, pattern, idx, z_array[idx]);
+
+        // 更新匹配范围和起始位置
         if idx + z_array[idx] > match_end + 1 {
             match_end = idx + z_array[idx] + 1;
             last_match = idx;
         }
     });
+
+    // 根据参数决定返回完整 Z 数组还是仅完全匹配位置
     if !only_full_matches {
         z_array
     } else {
@@ -64,11 +120,28 @@ fn match_with_z_array<T: Eq>(
     }
 }
 
+/// 构造给定字符串的 Z 数组。
+///
+/// Z 数组中每个元素表示从对应位置开始的子串与原字符串前缀的最大匹配长度。
+///
+/// # 参数
+/// - `input`: 输入字符串切片。
+///
+/// # 返回值
+/// 返回构造好的 Z 数组。
 #[allow(unused)]
 pub fn z_array<T: Eq>(input: &[T]) -> Vec<usize> {
     match_with_z_array(input, input, 1, false)
 }
 
+/// 在输入字符串中查找所有与模式串完全匹配的位置。
+///
+/// # 参数
+/// - `input`: 主字符串切片。
+/// - `pattern`: 要查找的模式串切片。
+///
+/// # 返回值
+/// 返回所有完全匹配的起始索引组成的向量。
 #[allow(unused)]
 pub fn match_pattern<T: Eq>(input: &[T], pattern: &[T]) -> Vec<usize> {
     match_with_z_array(input, pattern, 0, true)
@@ -142,11 +215,3 @@ mod tests {
     //     repeated_char_z_array: ("aaaaaa", vec![0, 5, 4, 3, 2, 1]),
     // }
 }
-
-
-
-
-
-
-
-
