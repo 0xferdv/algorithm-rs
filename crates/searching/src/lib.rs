@@ -4,7 +4,8 @@ pub use binary_search::*;
 mod binary_search_recursive;
 pub use binary_search_recursive::*;
 
-
+mod exponential_search;
+pub use exponential_search::*;
 
 
 
