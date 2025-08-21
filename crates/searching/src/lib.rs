@@ -12,3 +12,11 @@ pub use financing_search::*;
 
 mod interpolation_search;
 pub use interpolation_search::*;
+
+mod jump_search;
+pub use jump_search::*;
+
+
+
+
+
