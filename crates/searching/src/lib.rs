@@ -10,4 +10,5 @@ pub use exponential_search::*;
 mod financing_search;
 pub use financing_search::*;
 
-
+mod interpolation_search;
+pub use interpolation_search::*;
