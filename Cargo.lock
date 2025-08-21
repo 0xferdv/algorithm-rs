@@ -99,6 +99,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "searching"
+version = "0.1.0"
+
+[[package]]
 name = "sorting"
 version = "0.1.0"
 dependencies = [
