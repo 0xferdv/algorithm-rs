@@ -7,5 +7,7 @@ pub use binary_search_recursive::*;
 mod exponential_search;
 pub use exponential_search::*;
 
+mod financing_search;
+pub use financing_search::*;
 
 
