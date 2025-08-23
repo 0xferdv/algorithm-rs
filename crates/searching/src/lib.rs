@@ -22,3 +22,21 @@ pub use kth_smallest::*;
 mod kth_smallest_heap;
 pub use kth_smallest_heap::*;
 
+mod linear_search;
+pub use linear_search::*;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
