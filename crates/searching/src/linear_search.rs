@@ -140,10 +140,7 @@ mod tests {
             )*
         }
     }
-
-    /// 批量测试用例定义
-    ///
-    /// 包含各种边界条件和典型场景的测试数据
+    
     test_cases! {
         empty: ("a", &[] as &[&str], None),
         one_item_found: ("a", &["a"], Some(0)),

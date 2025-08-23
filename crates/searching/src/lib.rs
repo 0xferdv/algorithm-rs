@@ -25,6 +25,8 @@ pub use kth_smallest_heap::*;
 mod linear_search;
 pub use linear_search::*;
 
+mod moore_voting;
+pub use moore_voting::*;
 
 
 
