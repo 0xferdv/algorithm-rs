@@ -37,7 +37,8 @@ pub use saddleback_search::*;
 mod ternary_search;
 pub use ternary_search::*;
 
-
+mod ternary_search_min_max;
+pub use ternary_search_min_max::*;
 
 
 
