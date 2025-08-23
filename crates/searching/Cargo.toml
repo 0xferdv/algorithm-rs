@@ -5,3 +5,4 @@ edition = "2024"
 
 [dependencies]
 sorting = { workspace = true }
+data_structures = { workspace = true }

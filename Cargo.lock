@@ -106,6 +106,7 @@ dependencies = [
 name = "searching"
 version = "0.1.0"
 dependencies = [
+ "data_structures",
  "sorting",
 ]
 
