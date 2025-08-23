@@ -28,7 +28,8 @@ pub use linear_search::*;
 mod moore_voting;
 pub use moore_voting::*;
 
-
+mod quick_select;
+pub use quick_select::*;
 
 
 
