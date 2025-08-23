@@ -16,7 +16,8 @@ pub use interpolation_search::*;
 mod jump_search;
 pub use jump_search::*;
 
-
+mod kth_smallest;
+pub use kth_smallest::*;
 
 
 

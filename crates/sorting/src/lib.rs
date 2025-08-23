@@ -81,6 +81,7 @@ pub mod sleep_sort;
 pub use sleep_sort::*;
 
 pub mod sort_util;
+#[allow(unused)]
 pub use sort_util::*;
 
 pub mod stooge_sort;
