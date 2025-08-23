@@ -10,6 +10,8 @@ pub use b_tree::*;
 mod binary_search_tree;
 pub use binary_search_tree::*;
 
+mod fenwick_tree;
+pub use fenwick_tree::*;
 
 
 
