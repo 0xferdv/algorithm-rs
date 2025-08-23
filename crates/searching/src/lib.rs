@@ -40,6 +40,8 @@ pub use ternary_search::*;
 mod ternary_search_min_max;
 pub use ternary_search_min_max::*;
 
+mod ternary_search_min_max_recursive;
+pub use ternary_search_min_max_recursive::*;
 
 
 
