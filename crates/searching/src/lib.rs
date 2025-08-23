@@ -31,7 +31,8 @@ pub use moore_voting::*;
 mod quick_select;
 pub use quick_select::*;
 
-
+mod saddleback_search;
+pub use saddleback_search::*;
 
 
 
