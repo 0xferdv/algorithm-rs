@@ -7,6 +7,7 @@ members = [
     "crates/string",
     "crates/searching",
     "crates/number_theory",
+    "crates/data_structures",
 ]
 
 [workspace.dependencies]

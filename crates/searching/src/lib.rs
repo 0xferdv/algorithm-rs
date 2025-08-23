@@ -19,5 +19,6 @@ pub use jump_search::*;
 mod kth_smallest;
 pub use kth_smallest::*;
 
-
+mod kth_smallest_heap;
+pub use kth_smallest_heap::*;
 
