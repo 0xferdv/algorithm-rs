@@ -34,7 +34,8 @@ pub use quick_select::*;
 mod saddleback_search;
 pub use saddleback_search::*;
 
-
+mod ternary_search;
+pub use ternary_search::*;
 
 
 
