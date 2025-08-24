@@ -34,6 +34,7 @@ pub use range_minimum_query::*;
 mod rb_tree;
 pub use rb_tree::*;
 
-
+mod segment_tree;
+pub use segment_tree::*;
 
 
