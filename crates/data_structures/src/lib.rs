@@ -45,7 +45,8 @@ pub use segment_tree_recursive::*;
 mod stack_using_singly_list;
 pub use stack_using_singly_list::*;
 
-
+mod treap;
+pub use treap::*;
 
 
 
