@@ -31,7 +31,8 @@ pub use queue::*;
 mod range_minimum_query;
 pub use range_minimum_query::*;
 
-
+mod rb_tree;
+pub use rb_tree::*;
 
 
 
