@@ -25,7 +25,8 @@ pub use lazy_segment_tree::*;
 mod linked_list;
 pub use linked_list::*;
 
-
+mod queue;
+pub use queue::*;
 
 
 
