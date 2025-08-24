@@ -22,7 +22,8 @@ pub use hash_table::*;
 mod lazy_segment_tree;
 pub use lazy_segment_tree::*;
 
-
+mod linked_list;
+pub use linked_list::*;
 
 
 
