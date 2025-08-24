@@ -19,8 +19,8 @@ pub use graph::*;
 mod hash_table;
 pub use hash_table::*;
 
-
-
+mod lazy_segment_tree;
+pub use lazy_segment_tree::*;
 
 
 

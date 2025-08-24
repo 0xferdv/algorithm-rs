@@ -18,3 +18,5 @@ data_structures = { path = "./crates/data_structures" }
 
 # dependencies
 rand = { version = "0.9"}
+quickcheck = "1.0"
+quickcheck_macros = "1.0"
