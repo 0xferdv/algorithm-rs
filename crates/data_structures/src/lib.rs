@@ -28,7 +28,8 @@ pub use linked_list::*;
 mod queue;
 pub use queue::*;
 
-
+mod range_minimum_query;
+pub use range_minimum_query::*;
 
 
 
