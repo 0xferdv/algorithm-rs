@@ -54,6 +54,8 @@ pub use trie::*;
 mod union_find;
 pub use union_find::*;
 
+mod veb_tree;
+pub use veb_tree::*;
 
 
 

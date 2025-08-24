@@ -6,3 +6,4 @@ edition = "2024"
 [dependencies]
 quickcheck = { workspace = true }
 quickcheck_macros = { workspace = true }
+rand = { workspace = true }
