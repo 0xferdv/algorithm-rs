@@ -48,9 +48,8 @@ pub use stack_using_singly_list::*;
 mod treap;
 pub use treap::*;
 
-
-
-
+mod trie;
+pub use trie::*;
 
 
 
