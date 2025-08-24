@@ -51,7 +51,8 @@ pub use treap::*;
 mod trie;
 pub use trie::*;
 
-
+mod union_find;
+pub use union_find::*;
 
 
 
