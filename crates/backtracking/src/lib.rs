@@ -10,6 +10,8 @@ pub use hamiltonian_cycle::*;
 mod knight_tour;
 pub use knight_tour::*;
 
+mod n_queen;
+pub use n_queen::*;
 
 
 
