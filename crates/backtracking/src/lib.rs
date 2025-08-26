@@ -13,7 +13,8 @@ pub use knight_tour::*;
 mod n_queen;
 pub use n_queen::*;
 
-
+mod parentheses_generator;
+pub use parentheses_generator::*;
 
 
 
