@@ -57,6 +57,8 @@ pub use union_find::*;
 mod veb_tree;
 pub use veb_tree::*;
 
+mod bloom_filter;
+pub use bloom_filter::*;
 
 
 
