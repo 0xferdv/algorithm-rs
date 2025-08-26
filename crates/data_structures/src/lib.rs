@@ -60,7 +60,8 @@ pub use veb_tree::*;
 mod bloom_filter;
 pub use bloom_filter::*;
 
-
+mod count_min_sketch;
+pub use count_min_sketch::*;
 
 
 
