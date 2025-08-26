@@ -7,6 +7,8 @@ pub use graph_coloring::*;
 mod hamiltonian_cycle;
 pub use hamiltonian_cycle::*;
 
+mod knight_tour;
+pub use knight_tour::*;
 
 
 
