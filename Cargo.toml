@@ -6,6 +6,7 @@ members = [
     "crates/sorting",
     "crates/string",
     "crates/searching",
+    "crates/backtracking",
     "crates/number_theory",
     "crates/data_structures",
 ]
