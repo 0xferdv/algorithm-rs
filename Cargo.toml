@@ -8,7 +8,7 @@ members = [
     "crates/searching",
     "crates/backtracking",
     "crates/number_theory",
-    "crates/data_structures",
+    "crates/data_structures", "crates/big_integer",
 ]
 
 [workspace.dependencies]
