@@ -6,9 +6,11 @@ members = [
     "crates/sorting",
     "crates/string",
     "crates/searching",
+    "crates/navigation",
+    "crates/big_integer",
     "crates/backtracking",
     "crates/number_theory",
-    "crates/data_structures", "crates/big_integer", "crates/navigation",
+    "crates/data_structures",
 ]
 
 [workspace.dependencies]
