@@ -16,6 +16,8 @@ pub use n_queen::*;
 mod parentheses_generator;
 pub use parentheses_generator::*;
 
+mod permutations;
+pub use permutations::*;
 
 
 
