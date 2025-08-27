@@ -25,7 +25,8 @@ pub use rat_in_maze::*;
 mod subset_sum;
 pub use subset_sum::*;
 
-
+mod sudoku;
+pub use sudoku::*;
 
 
 
