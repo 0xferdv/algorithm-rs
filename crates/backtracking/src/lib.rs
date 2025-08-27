@@ -22,6 +22,8 @@ pub use permutations::*;
 mod rat_in_maze;
 pub use rat_in_maze::*;
 
+mod subset_sum;
+pub use subset_sum::*;
 
 
 
