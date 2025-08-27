@@ -19,8 +19,8 @@ pub use parentheses_generator::*;
 mod permutations;
 pub use permutations::*;
 
-
-
+mod rat_in_maze;
+pub use rat_in_maze::*;
 
 
 
