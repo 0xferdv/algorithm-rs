@@ -21,3 +21,5 @@ data_structures = { path = "./crates/data_structures" }
 rand = { version = "0.9"}
 quickcheck = "1.0"
 quickcheck_macros = "1.0"
+num-bigint = { version = "0.4", optional = true }
+num-traits = { version = "0.2", optional = true }
