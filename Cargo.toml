@@ -3,6 +3,7 @@
 resolver = "3"
 
 members = [
+    "crates/math",
     "crates/string",
     "crates/greedy",
     "crates/sorting",
