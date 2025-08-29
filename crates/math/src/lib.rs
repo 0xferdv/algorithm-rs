@@ -10,7 +10,8 @@ pub use amicable_number::*;
 mod area_of_polygon;
 pub use area_of_polygon::*;
 
-
+mod area_under_curve;
+pub use area_under_curve::*;
 
 
 
