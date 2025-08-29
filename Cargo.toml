@@ -3,8 +3,9 @@
 resolver = "3"
 
 members = [
-    "crates/sorting",
     "crates/string",
+    "crates/greedy",
+    "crates/sorting",
     "crates/searching",
     "crates/navigation",
     "crates/big_integer",
