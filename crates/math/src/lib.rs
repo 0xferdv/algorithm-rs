@@ -28,7 +28,8 @@ pub use baby_step_giant_step::*;
 mod bell_numbers;
 pub use bell_numbers::*;
 
-
+mod binary_exponentiation;
+pub use binary_exponentiation::*;
 
 
 
