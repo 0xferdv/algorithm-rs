@@ -70,7 +70,8 @@ pub use fast_power::*;
 mod random;
 pub use random::*;
 
-
+mod euclidean_distance;
+pub use euclidean_distance::*;
 
 
 
