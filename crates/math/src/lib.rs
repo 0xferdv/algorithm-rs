@@ -37,8 +37,10 @@ pub use catalan_numbers::*;
 mod ceil;
 pub use ceil::*;
 
+mod chinese_remainder_theorem;
+pub use chinese_remainder_theorem::*;
 
-
-
+mod extended_euclidean_algorithm;
+pub use extended_euclidean_algorithm::*;
 
 
