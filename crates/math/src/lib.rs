@@ -34,7 +34,8 @@ pub use binary_exponentiation::*;
 mod catalan_numbers;
 pub use catalan_numbers::*;
 
-
+mod ceil;
+pub use ceil::*;
 
 
 
