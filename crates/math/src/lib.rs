@@ -77,6 +77,8 @@ mod exponential_linear_unit;
 pub use exponential_linear_unit::*;
 
 mod factorial;
+mod factors;
+
 pub use factorial::*;
 
 
