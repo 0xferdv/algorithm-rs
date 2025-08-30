@@ -46,3 +46,5 @@ pub use extended_euclidean_algorithm::*;
 mod collatz_sequence;
 pub use collatz_sequence::*;
 
+mod combinations;
+pub use combinations::*;
