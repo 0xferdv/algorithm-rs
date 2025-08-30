@@ -43,4 +43,6 @@ pub use chinese_remainder_theorem::*;
 mod extended_euclidean_algorithm;
 pub use extended_euclidean_algorithm::*;
 
+mod collatz_sequence;
+pub use collatz_sequence::*;
 
