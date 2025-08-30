@@ -62,6 +62,8 @@ mod field;
 pub use field::*;
 
 mod quadratic_residue;
+mod fast_power;
+
 pub use quadratic_residue::*;
 
 
