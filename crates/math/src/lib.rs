@@ -16,7 +16,8 @@ pub use area_under_curve::*;
 mod armstrong_number;
 pub use armstrong_number::*;
 
-
+mod average;
+pub use average::*;
 
 
 
