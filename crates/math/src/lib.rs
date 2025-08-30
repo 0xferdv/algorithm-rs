@@ -77,12 +77,13 @@ mod exponential_linear_unit;
 pub use exponential_linear_unit::*;
 
 mod factorial;
-mod factors;
-
 pub use factorial::*;
 
+mod factors;
+pub use factors::*;
 
-
+mod fast_fourier_transform;
+pub use fast_fourier_transform::*;
 
 
 
