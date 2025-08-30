@@ -52,6 +52,8 @@ pub use combinations::*;
 mod cross_entropy_loss;
 pub use cross_entropy_loss::*;
 
+mod decimal_to_fraction;
+pub use decimal_to_fraction::*;
 
 
 
