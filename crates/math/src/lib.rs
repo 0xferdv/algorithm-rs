@@ -19,7 +19,8 @@ pub use armstrong_number::*;
 mod average;
 pub use average::*;
 
-
+mod greatest_common_divisor;
+pub use greatest_common_divisor::*;
 
 
 
