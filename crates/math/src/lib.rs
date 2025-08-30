@@ -48,3 +48,27 @@ pub use collatz_sequence::*;
 
 mod combinations;
 pub use combinations::*;
+
+mod cross_entropy_loss;
+pub use cross_entropy_loss::*;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
