@@ -58,6 +58,11 @@ pub use decimal_to_fraction::*;
 mod doomsday;
 pub use doomsday::*;
 
+mod field;
+pub use field::*;
+
+mod quadratic_residue;
+pub use quadratic_residue::*;
 
 
 
