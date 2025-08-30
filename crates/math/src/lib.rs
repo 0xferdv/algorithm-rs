@@ -22,6 +22,8 @@ pub use average::*;
 mod greatest_common_divisor;
 pub use greatest_common_divisor::*;
 
+mod baby_step_giant_step;
+pub use baby_step_giant_step::*;
 
 
 
