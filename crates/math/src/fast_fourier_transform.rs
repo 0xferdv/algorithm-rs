@@ -274,15 +274,6 @@ pub fn inverse_fast_fourier_transform(
 mod tests {
     use super::*;
 
-    /// 检查两个浮点数是否近似相等。
-    ///
-    /// # 参数
-    /// * [a](file://E:\0xferdv\001-rust\algorithm-rs\target\debug\deps\libcfg_if-b4957d577da748fa.rmeta) - 第一个浮点数
-    /// * [b](file://E:\0xferdv\001-rust\algorithm-rs\target\debug\build\zerocopy-dbd6279178c04a94\build_script_build.pdb) - 第二个浮点数
-    /// * `epsilon` - 误差范围
-    ///
-    /// # 返回值
-    /// 如果两个数的差的绝对值小于epsilon，则返回true，否则返回false。
     fn almost_equal(a: f64, b: f64, epsilon: f64) -> bool {
         (a - b).abs() < epsilon
     }
@@ -317,8 +308,6 @@ mod tests {
     #[test]
     #[ignore]
     fn square_big_polynomial() {
-        // This test case takes ~1050ms on my machine in unoptimized mode,
-        // but it takes ~70ms in release mode.
         let n = 1 << 17; // ~100_000
         let mut polynomial = vec![1.0f64; n];
         polynomial.append(&mut vec![0.0f64; n]);
