@@ -73,7 +73,8 @@ pub use random::*;
 mod euclidean_distance;
 pub use euclidean_distance::*;
 
-
+mod exponential_linear_unit;
+pub use exponential_linear_unit::*;
 
 
 
