@@ -64,9 +64,9 @@ pub use field::*;
 mod quadratic_residue;
 pub use quadratic_residue::*;
 
-
 mod fast_power;
 pub use fast_power::*;
+
 mod random;
 pub use random::*;
 
