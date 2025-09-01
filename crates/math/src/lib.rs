@@ -85,6 +85,8 @@ pub use factors::*;
 mod fast_fourier_transform;
 pub use fast_fourier_transform::*;
 
+mod frizzy_number;
+pub use frizzy_number::*;
 
 
 
