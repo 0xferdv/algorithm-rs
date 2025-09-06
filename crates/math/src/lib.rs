@@ -94,6 +94,7 @@ pub use gaussian_elimination::*;
 mod gaussian_error_linear_unit;
 pub use gaussian_error_linear_unit::*;
 
-
+mod huber_loss;
+pub use huber_loss::*;
 
 
