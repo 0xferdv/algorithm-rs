@@ -97,4 +97,5 @@ pub use gaussian_error_linear_unit::*;
 mod huber_loss;
 pub use huber_loss::*;
 
-
+mod infix_to_postfix;
+pub use infix_to_postfix::*;
