@@ -88,7 +88,8 @@ pub use fast_fourier_transform::*;
 mod frizzy_number;
 pub use frizzy_number::*;
 
-
+mod gaussian_elimination;
+pub use gaussian_elimination::*;
 
 
 
