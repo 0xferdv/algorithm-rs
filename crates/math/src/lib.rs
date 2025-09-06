@@ -91,6 +91,8 @@ pub use frizzy_number::*;
 mod gaussian_elimination;
 pub use gaussian_elimination::*;
 
+mod gaussian_error_linear_unit;
+pub use gaussian_error_linear_unit::*;
 
 
 
