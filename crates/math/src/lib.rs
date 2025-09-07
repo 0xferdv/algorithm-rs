@@ -104,7 +104,7 @@ mod gcd_of_n_number;
 pub use gcd_of_n_number::*;
 
 mod geometric_series;
-mod interest;
-
 pub use geometric_series::*;
 
+mod interest;
+pub use interest::*;
