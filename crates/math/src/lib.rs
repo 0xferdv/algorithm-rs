@@ -99,3 +99,9 @@ pub use huber_loss::*;
 
 mod infix_to_postfix;
 pub use infix_to_postfix::*;
+
+mod gcd_of_n_number;
+pub use gcd_of_n_number::*;
+
+
+
