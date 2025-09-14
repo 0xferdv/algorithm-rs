@@ -115,6 +115,8 @@ pub use interpolation::*;
 mod interquartile_range;
 pub use interquartile_range::*;
 
+mod karatsuba_multiplication;
+pub use karatsuba_multiplication::*;
 
 
 
