@@ -111,3 +111,22 @@ pub use interest::*;
 
 mod interpolation;
 pub use interpolation::*;
+
+mod interquartile_range;
+pub use interquartile_range::*;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
