@@ -108,3 +108,6 @@ pub use geometric_series::*;
 
 mod interest;
 pub use interest::*;
+
+mod interpolation;
+pub use interpolation::*;
