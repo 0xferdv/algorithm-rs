@@ -160,13 +160,10 @@ pub fn cip_olla(a: u32, p: u32, seed: Option<u64>) -> Option<(u32, u32)> {
     if !is_residue(a, p) {
         return None
     }
-    let seed = match seed {
-        Some(seed) => seed,
-        None => SystemTime::now()
-            .duration_since(UNIX_EPOCH)
-            .unwrap()
-            .as_secs(),
-    };
+    let seed = seed.unwrap_or_else(|| SystemTime::now()
+        .duration_since(UNIX_EPOCH)
+        .unwrap()
+        .as_secs());
     let mut rng = PCG32::new_default(seed);
     let r = loop {
         let r = rng.get_u64() % p;
