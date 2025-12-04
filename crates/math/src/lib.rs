@@ -100,8 +100,8 @@ pub use huber_loss::*;
 mod infix_to_postfix;
 pub use infix_to_postfix::*;
 
-mod gcd_of_n_number;
-pub use gcd_of_n_number::*;
+mod lcm_of_n_numbers;
+pub use lcm_of_n_numbers::*;
 
 mod geometric_series;
 pub use geometric_series::*;
@@ -118,15 +118,15 @@ pub use interquartile_range::*;
 mod karatsuba_multiplication;
 pub use karatsuba_multiplication::*;
 
-pub mod sieve_of_eratosthenes;
+mod sieve_of_eratosthenes;
 pub use sieve_of_eratosthenes::*;
 
-pub mod relu;
+mod relu;
 pub use relu::*;
 
-pub mod lcm_of_n_numbers;
-pub use lcm_of_n_numbers::*;
 
+mod leaky_relu;
+pub use leaky_relu::*;
 
 
 
