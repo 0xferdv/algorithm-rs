@@ -124,6 +124,9 @@ pub use sieve_of_eratosthenes::*;
 pub mod relu;
 pub use relu::*;
 
+pub mod lcm_of_n_numbers;
+pub use lcm_of_n_numbers::*;
+
 
 
 
