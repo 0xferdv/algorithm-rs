@@ -14,7 +14,7 @@ pub fn sieve_of_eratosthenes(num: usize) -> Vec<usize> {
     result
 }
 
-fn update_sieve(sieve: &mut [bool], end: usize, num: usize, result: &mut Vec<usize>) {
+fn update_sieve(sieve: &mut Vec<bool>, end: usize, num: usize, result: &mut Vec<usize>) {
     for start in 2..=end {
         if sieve[start] {
             result.push(start); // Collect prime numbers up to `end`
@@ -25,7 +25,7 @@ fn update_sieve(sieve: &mut [bool], end: usize, num: usize, result: &mut Vec<usi
     }
 }
 
-fn extract_remaining_primes(sieve: &[bool], start: usize) -> Vec<usize> {
+fn extract_remaining_primes(sieve: &Vec<bool>, start: usize) -> Vec<usize> {
     sieve[start..]
         .iter()
         .enumerate()
