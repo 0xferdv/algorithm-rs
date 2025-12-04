@@ -128,7 +128,8 @@ pub use relu::*;
 mod leaky_relu;
 pub use leaky_relu::*;
 
-
+mod least_square_approx;
+pub use least_square_approx::*;
 
 
 
