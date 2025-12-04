@@ -153,7 +153,7 @@ impl PCG32 {
     ///
     /// # 返回值
     /// 返回一个指向自身可变引用的 IterMut 结构体。
-    pub fn iter_mut(&mut self) -> IterMut {
+    pub fn iter_mut(&mut self) -> IterMut<'_> {
         IterMut { pcg: self }
     }
 }

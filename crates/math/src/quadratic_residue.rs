@@ -236,6 +236,7 @@ pub fn tonelli_shanks(a: i64, add_prime: u64) -> Option<u64> {
 
 #[cfg(test)]
 mod tests {
+    use crate::cip_olla;
     use super::*;
 
     /// 辅助函数：获取模意义下平方根的两个解。

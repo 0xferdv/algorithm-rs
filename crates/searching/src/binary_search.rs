@@ -1,6 +1,5 @@
 use std::cmp::Ordering;
 
-
 /// 在一个有序数组中使用二分查找算法查找指定元素。
 ///
 /// 该函数支持升序和降序排列的数组。如果找到目标元素，则返回其索引；
@@ -51,7 +50,7 @@ fn match_compare<T: Ord>(
     right: &mut usize,
     is_asc: bool,
 ) -> bool {
-    let mid = *left + (*right  - *left) / 2;
+    let mid = *left + (*right - *left) / 2;
     let cmp_result = item.cmp(&arr[mid]);
 
     match (is_asc, cmp_result) {
