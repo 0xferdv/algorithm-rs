@@ -118,9 +118,10 @@ pub use interquartile_range::*;
 mod karatsuba_multiplication;
 pub use karatsuba_multiplication::*;
 
-mod relu;
-mod sieve_of_eratosthenes;
+pub mod sieve_of_eratosthenes;
+pub use sieve_of_eratosthenes::*;
 
+pub mod relu;
 pub use relu::*;
 
 
