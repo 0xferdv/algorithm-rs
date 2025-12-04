@@ -3,23 +3,15 @@
 use std::cmp::max;
 use std::fmt::Debug;
 
-/// 线性筛（欧拉筛）结构体，用于高效计算质数及其最小质因数。
-///
-/// 该结构体通过线性时间复杂度预处理，能够快速获取指定范围内的所有质数，
-/// 并支持对范围内的任意数字进行质因数分解。
 pub struct LinearSieve {
-    /// 预处理的最大数值上限
     max_number: usize,
-    /// 存储所有小于等于 max_number 的质数列表
     pub primes: Vec<usize>,
-    /// 存储每个数字的最小质因数，索引对应数字本身
     pub minimum_prime_factor: Vec<usize>,
 }
 
+
 impl LinearSieve {
-    /// 创建一个新的空 LinearSieve 实例。
-    ///
-    /// 返回值：初始化后的 LinearSieve 结构体实例。
+
     pub const fn new() -> Self {
         Self {
             max_number: 0,
@@ -28,14 +20,6 @@ impl LinearSieve {
         }
     }
 
-    /// 对 [2, max_number] 范围内的数字执行线性筛法预处理。
-    ///
-    /// 参数：
-    /// - `max_number`: 需要预处理的最大整数。
-    ///
-    /// 返回值：
-    /// - 成功时返回 `Ok(())`；
-    /// - 若输入小于 1 或已初始化过则返回错误信息字符串。
     pub fn prepare(&mut self, max_number: usize) -> Result<(), &'static str> {
         if max_number < 1 {
             return Err("Sieve size should be more than 1");
@@ -45,8 +29,6 @@ impl LinearSieve {
         }
         self.max_number = max_number;
         self.minimum_prime_factor.resize(max_number + 1, 0);
-
-        // 使用线性筛算法填充 primes 和 minimum_prime_factor 数组
         for i in 2..=max_number {
             if self.minimum_prime_factor[i] == 0 {
                 self.minimum_prime_factor[i] = i;
@@ -63,16 +45,8 @@ impl LinearSieve {
         Ok(())
     }
 
-    /// 将给定的正整数分解为其所有的质因数。
-    ///
-    /// 参数：
-    /// - `number`: 待分解的正整数。
-    ///
-    /// 返回值：
-    /// - 成功时返回包含所有质因数的向量；
-    /// - 若 number 大于预处理范围或为零，则返回错误提示。
     pub fn factorize(&self, mut number: usize) -> Result<Vec<usize>, &'static str> {
-        if number > self.max_number {
+        if number < self.max_number {
             return Err("Number is too big, its minimum_prime_factor was not calculated");
         }
         if number == 0 {
@@ -88,11 +62,11 @@ impl LinearSieve {
 }
 
 impl Default for LinearSieve {
-    /// 提供默认构造方式，等价于调用 `new()` 方法。
     fn default() -> Self {
         Self::new()
     }
 }
+
 
 #[cfg(test)]
 mod tests {
